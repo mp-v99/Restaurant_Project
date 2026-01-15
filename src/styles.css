@@ -1,0 +1,139 @@
+:root {
+    --bg-main: #FAF7F2;
+    --bg-surface: #F1ECE6;
+  
+    --text-primary: #2E2A26;
+    --text-muted: #6F6A64;
+  
+    --brand-primary: #E86A33;
+    --brand-secondary: #4FAF7C;
+    --brand-anchor: #4B6FA9;
+  
+    --accent-yellow: #F2C94C;
+    --accent-berry: #C74A6A;
+    --accent-mint: #7FD1C6;
+    --accent-plum: #7B5EA7;
+  }
+
+/* Normalize: */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+   /*  remove default margin */
+   * {
+    margin: 0;
+   }
+   
+   
+   /* remove lists default styles without ruining IOS screen reader accessibility  */
+   ol[role="list"], ul[role="list"] {
+     list-style: none;
+     padding-inline: 0;
+   }
+   
+   /* enable keyword animations */
+   @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+   }
+   body {
+    /* add accessible line-height */
+    line-height: 1.5;
+    /* improve text rendering */
+    -webkit-font-smoothing: antialiased;
+   }
+   /* improve media defaults */
+   img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+   }
+   /* inherit fonts for form controls */
+   input, button, textarea, select {
+    font: inherit;
+   }
+   /* avoid text overflows */
+   p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+   }
+   /* improve line wrapping */
+   p {
+    text-wrap: pretty;
+   }
+   h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+   }
+      
+   button {
+     background: none;
+     border: none;
+     padding: 0;
+     cursor: pointer;
+   }
+
+   /* Custom Rules: */
+
+* {
+    color: var(--text-primary)
+}
+
+   body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--brand-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+   
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex: 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    flex: 10;
+}
+
+#left-container,
+#right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    flex: 1;
+
+    gap: 2rem;
+}
+
+#right-container {
+    padding-left: 4rem;
+    padding-right: 5rem;
+}
+
+#logo-image {
+    flex: 1;
+    height: 25vh;
+    width: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
