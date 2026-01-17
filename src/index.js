@@ -2,17 +2,22 @@ import "./styles.css"
 
 import {loadHome, unloadHome} from "./home.js"
 
-loadHome();
-
 // DOM Elements
 
 const mainElement = document.querySelector("main");
-const homeBtn = document.querySelector("#home_button");
-const menuBtn = document.querySelector("#menu_button");
-const aboutBtn = document.querySelector("#about_button");
+
+const navBtn = document.querySelectorAll(".nav_btn");
 
 // DOM E. Listeners:
 
-homeBtn.addEventListener("click", () => {
-    loadHome();
+navBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+
+        switch (btn.id) {
+            case "home_button": loadHome();
+            // case "menu_button": loadMenu();
+        }
+    
+    })
 });
+
