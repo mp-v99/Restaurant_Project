@@ -26,7 +26,7 @@ const figCaption = document.createElement("figcaption");
 // rightContainer children
 
 const description = document.createElement("p");
-const menuBtn = document.createElement("btn");
+const menuBtn = document.createElement("button");
 
 // Figure image content:
 
