@@ -103,7 +103,7 @@ main {
     justify-content: center;
     align-items: center;
 
-
+    background-color: var(--bg-surface);
 
     flex: 10;
 }
@@ -122,9 +122,33 @@ main {
     gap: 2rem;
 }
 
+#left-container>figure>figcaption {
+    color: var(--text-muted);
+}
+
 #right-container {
     padding-left: 4rem;
     padding-right: 5rem;
+
+}
+
+#right-container>p,
+#right-container>button{
+    color: var(--text-muted);
+}
+
+#right-container>button {
+    color: var(--bg-main);
+    font-weight: bold;
+    background-color: var(--brand-secondary);
+
+    border-radius: 10px;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    padding-top: .1rem;
+    padding-bottom: .1rem;
 }
 
 #logo-image {
@@ -146,6 +170,7 @@ footer {
     align-items: center;
     justify-content: center;
 
+    color: var(--accent-berry);
 }
 
 
@@ -159,9 +184,10 @@ nav {
 
 
 .nav_btn {
-    color: var(--text-primary);
-    background-color: var(--bg-surface);
-    border: 3px solid var(--brand-primary);
+    color: var(--bg-main);
+    font-weight: bold;
+    background-color: var(--brand-primary);
+    border: 2px solid var(--brand-anchor);
 
     border-radius: 10px;
 
@@ -171,5 +197,4 @@ nav {
     padding-top: .1rem;
     padding-bottom: .1rem;
     
-
 }
