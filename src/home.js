@@ -72,11 +72,6 @@ const footerElement =  document.createElement("footer");
 
 footerElement.textContent = "Designed by Max Pons for The Odin Project";
 
-// Footer append children:
-
-bodyDOM.appendChild(footerElement);
-
-return bodyDOM
 }
 
 export {loadHome}
