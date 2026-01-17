@@ -1,6 +1,8 @@
 import "./styles.css"
 
-import {loadHome, unloadHome} from "./home.js"
+import {loadHome} from "./home.js"
+
+loadHome();
 
 // DOM Elements
 
@@ -12,6 +14,10 @@ const navBtn = document.querySelectorAll(".nav_btn");
 
 navBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
+
+        const contentElement = document.querySelector("#content"); 
+
+        mainElement.removeChild(contentElement);
 
         switch (btn.id) {
             case "home_button": loadHome();

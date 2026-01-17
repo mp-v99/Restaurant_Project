@@ -6,8 +6,12 @@ import logoImage from "./illustrations/pozoramen.png"
 
 const loadHome = function(){
    
+// Content container:
 
-// Main Element children: 
+const contentElement = document.createElement("div");
+contentElement.id = "content"
+
+// Content Element children: 
 
 const leftContainer = document.createElement("div");
 const rightContainer = document.createElement("div");
@@ -47,10 +51,14 @@ description.textContent = `Pozoramen is a cozy, colorful kitchen where Mexican s
 
 menuBtn.textContent = "Menu";
 
-// Main append children: 
+// Main append content:
 
-mainElement.appendChild(leftContainer);
-mainElement.appendChild(rightContainer);
+mainElement.appendChild(contentElement);
+
+// Content append children: 
+
+contentElement.appendChild(leftContainer);
+contentElement.appendChild(rightContainer);
 
 // Left container append children:
 
