@@ -1,15 +1,21 @@
 import logoImage from "./illustrations/pozoramen.png"
 
+ // DOM selection:
+
+ const mainElement = document.querySelector("main");
 
 const loadHome = function(){
-    // DOM manipulation:
+   
 
-const mainElement = document.querySelector("main");
-
-// Main children: 
+// Main Element children: 
 
 const leftContainer = document.createElement("div");
 const rightContainer = document.createElement("div");
+
+// Containers ID's:
+
+leftContainer.id = "left-container";
+rightContainer.id = "right-container";
 
 // leftContainer children
 
@@ -21,11 +27,6 @@ const figCaption = document.createElement("figcaption");
 
 const description = document.createElement("p");
 const menuBtn = document.createElement("btn");
-
-// Container ID's:
-
-leftContainer.id = "left-container";
-rightContainer.id = "right-container";
 
 // Figure image content:
 
@@ -65,5 +66,14 @@ rightContainer.appendChild(menuBtn);
 
 }
 
-export {loadHome}
+const unloadHome = function() {
+
+    const leftContainer = document.querySelector("#left-container");
+    const rightContainer = document.querySelector("#right-container");
+
+    mainElement.removeChild(leftContainer);
+    mainElement.removeChild(rightContainer)
+}
+
+export {loadHome, unloadHome }
 
