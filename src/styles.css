@@ -103,17 +103,15 @@ header {
 main {
     display: flex;
     flex: 10;
+
+    background-color: var(--bg-surface);
 }
+
 #content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     background-color: var(--bg-surface);
 
     flex: 1;
-
-    border: 1px solid red;
 }
 
 #left-container,
@@ -128,6 +126,13 @@ main {
     flex: 1;
 
     gap: 2rem;
+}
+
+#left-container>figure {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
 #left-container>figure>figcaption {
@@ -159,9 +164,8 @@ main {
     padding-bottom: .1rem;
 }
 
-#logo-image {
-    flex: 1;
-    height: 25vh;
+figure>#logo-image {
+    height: 200px;
     width: auto;
 }
 
@@ -207,3 +211,39 @@ nav {
     padding-bottom: .1rem;
     
 }
+
+#menu_container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+
+    gap: 3rem;
+    
+    background-color: var(--bg-surface);
+    flex: 1;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+#menu_container img {
+    width: 150px;
+    height: 150px;
+}
+
+#menu_container>.menu-image-item {
+    grid-column: 2 / 3;
+
+    background-color: var(--brand-anchor);
+
+    border: 3px solid var(--brand-primary);
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 205px;
+
+}
+
