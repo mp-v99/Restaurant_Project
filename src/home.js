@@ -63,15 +63,6 @@ figureElement.appendChild(figCaption);
 rightContainer.appendChild(description);
 rightContainer.appendChild(menuBtn);
 
-
-// Footer elements:
-
-const footerElement =  document.createElement("footer");
-
-// Footer text content:
-
-footerElement.textContent = "Designed by Max Pons for The Odin Project";
-
 }
 
 export {loadHome}
