@@ -74,14 +74,5 @@ rightContainer.appendChild(menuBtn);
 
 }
 
-const unloadHome = function() {
-
-    const leftContainer = document.querySelector("#left-container");
-    const rightContainer = document.querySelector("#right-container");
-
-    mainElement.removeChild(leftContainer);
-    mainElement.removeChild(rightContainer)
-}
-
-export {loadHome, unloadHome }
+export {loadHome}
 
